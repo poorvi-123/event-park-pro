@@ -130,13 +130,13 @@ export default function Events() {
                     </span>
                   </div>
                   <div className="flex items-center justify-between pt-2">
-                    <span className="text-2xl font-bold">₹{event.price}</span>
+                    <span className="text-2xl font-bold">₹{Number(event.price).toFixed(0)}</span>
                     <Link to={`/event/${event.id}`}>
                       <Button
-                        className="bg-gradient-to-r from-primary to-secondary"
+                        className="bg-gradient-to-r from-primary to-secondary hover:scale-105 transition-transform"
                         disabled={event.available_seats === 0}
                       >
-                        Book Now
+                        Select Seats
                       </Button>
                     </Link>
                   </div>
