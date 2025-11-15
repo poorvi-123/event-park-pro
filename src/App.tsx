@@ -7,6 +7,7 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import Events from "./pages/Events";
+import EventDetail from "./pages/EventDetail";
 import Parking from "./pages/Parking";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
@@ -24,6 +25,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/event/:id" element={<EventDetail />} />
             <Route path="/parking" element={<Parking />} />
             <Route path="/profile" element={<Profile />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
